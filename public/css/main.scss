@@ -129,6 +129,9 @@ section.hero{
         margin: 1.5em 5em;
         font-family: 'Poppins', sans-serif;
     }
+    svg.menu{
+        display: none;
+    }
     nav{
         transform: translateX(0);
         position: unset;
@@ -136,9 +139,31 @@ section.hero{
         width: auto;
         height: auto;
         background: none;
+
+        
+        svg.close{
+            display: none;
+        }
+        ul{
+            display: flex;
+            margin: 0;
+            a{
+                color: white;
+                padding: .5rem 1.5rem;
+                font-size: .9rem;
+
+                &:hover{
+                    background: none;
+                    text-decoration: underline;
+                }
+            }
+        }
+
     }
 
+
 }
+
 @media screen and (min-width:920px) {
     .menu{
        display: none;

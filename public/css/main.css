@@ -137,6 +137,9 @@ section.hero .down-arrow path {
     margin: 1.5em 5em;
     font-family: 'Poppins', sans-serif;
   }
+  svg.menu {
+    display: none;
+  }
   nav {
     -webkit-transform: translateX(0);
             transform: translateX(0);
@@ -145,6 +148,24 @@ section.hero .down-arrow path {
     width: auto;
     height: auto;
     background: none;
+  }
+  nav svg.close {
+    display: none;
+  }
+  nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+  }
+  nav ul a {
+    color: white;
+    padding: .5rem 1.5rem;
+    font-size: .9rem;
+  }
+  nav ul a:hover {
+    background: none;
+    text-decoration: underline;
   }
 }
 
